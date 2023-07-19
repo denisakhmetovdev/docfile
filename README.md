@@ -39,7 +39,7 @@ docker build -t <имя_будущего_образа> .
 ```
 Например:
 ```shell
-docker build -t e4 .
+docker build -t my_super_django_project .
 ```
 
 Теперь можно залить образ на Docker Hub
@@ -51,7 +51,7 @@ docker build -t e4 .
 docker login
 
 # Тэгируем образ перед публикацией
-docker tag django_for_server ddakhmetov/django_for_server:latest
+docker tag <имя_образа> <ваш_username_на_docker-hub>/<имя_образа>:latest
 
 # Публикуем образ на Docker Hub
 docker push <ваш_username_на_docker-hub>/<имя_образа>:latest
